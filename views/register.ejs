@@ -1,0 +1,24 @@
+<%- include('./partials/head.ejs') %>
+<main>
+  <div class="signin-form">
+    <h1>Sign up for free</h1>
+    <form action="/register" method="POST">
+      <div>
+        <label for="name">Enter your first name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="email">Enter your e-mail</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Enter a password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <button type="submit">Create account</button>
+    </form>
+    <a href="/login">Already have an account?</a>
+  </div>
+</main>
+
+<%- include('./partials/foot.ejs') %>

@@ -1,0 +1,23 @@
+<%- include("./partials/head.ejs") %>
+<header></header>
+<main>
+  <div class="signin-form">
+    <h1>Sign in</h1>
+    <form action="/login" method="POST">
+      <% if (messages.error) { %> <%= messages.error %> <% } %>
+      <div>
+        <label for="email">Enter your e-mail</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Enter your password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <button type="submit">Sign in</button>
+    </form>
+    <a href="/register">Don't have an account? Sign up for free!</a>
+  </div>
+  <button id="test">Test</button>
+</main>
+
+<%- include("./partials/foot.ejs") %>
